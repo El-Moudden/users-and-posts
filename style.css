@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100% ;
+  background-color: rgb(219 230 240 / 33%);;
+ 
+}
+.container{
+  padding: 15px;
+  display: flex;
+}
+.users {
+
+  width: 30% ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.user {
+  width: 60% ;
+  height: 80px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Smooth transition */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+}
+.user.scaled {
+  transform: scale(1.05);
+  background-color: orange;
+}
+.user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+  
+}
+.email {
+  font-size: 12px;
+  color: #a58b8b;
+}
+
+.posts {
+  width:70% ;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.post {
+  padding: 15px;
+  width: 45%;
+ height: fit-content;
+  background-color: rgb(253, 253, 253);
+  margin: 0 5px 15px 0;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+hr {
+  margin: 5px 0;
+  background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+  
+}
+.active {
+  scale: 1.2;
+}
